@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 import style from './app.scss';
 
 class App extends Component {
   render() {
     return (
-      <h1 className={style.text}>{this.props.message}</h1>
+      <div>
+        <h1 className={style.text}>{this.props.message}</h1>
+        <Link to="/about/5">About page</Link>  
+      </div>
     );
   }
 }
