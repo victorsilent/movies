@@ -1,0 +1,35 @@
+[33mcommit 55b2e94a6af8824b08e8b3e7eac2b5f32db98fab[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: João Victor <joaovpbarbosa@gmail.com>
+Date:   Sat Feb 17 02:17:34 2018 -0200
+
+    Changes to work with new project
+
+[33mcommit 9e64a106686c1c087db8250e84dd4eb2f57ef0e4[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: João Victor <joaovpbarbosa@gmail.com>
+Date:   Thu Feb 15 20:59:45 2018 -0200
+
+    Routes fixed, animations on menu and finally transitions between routes :)
+
+[33mcommit b91104de34ac2f874843409ab3845a0ee4c35681[m
+Author: João Victor <joaovpbarbosa@gmail.com>
+Date:   Sat Feb 10 14:07:10 2018 -0200
+
+    Adding reducer to control UI, added forms examples and pages folder
+
+[33mcommit 2a6ef87b46a74f22ada2993dadb12fc6f1a701f8[m
+Author: João Victor <joaovpbarbosa@gmail.com>
+Date:   Wed Jan 31 21:46:01 2018 -0200
+
+    Update README.md
+
+[33mcommit f2ad4f9f8ea290f3d78e78f2bd059c13c130c766[m
+Author: João Victor <joaovpbarbosa@gmail.com>
+Date:   Wed Jan 31 21:19:47 2018 -0200
+
+    Adding react router with redux
+
+[33mcommit 10c4435e91e1fc0640da7fef9073b4486ad8a9e5[m
+Author: João Victor <joaovpbarbpsa@gmail.com>
+Date:   Tue Jan 30 16:36:32 2018 -0200
+
+    Started and add libraries to project
