@@ -1,7 +1,6 @@
 import { createStore, combineReducers, compose, applyMiddleware } from  'redux';
 import thunk from 'redux-thunk';
 import uiReducer from './reducers/uiReducer';
-import contactReducer from './reducers/contactReducer';
 import { routerReducer, routerMiddleware } from 'react-router-redux'
 import { reducer as formReducer } from 'redux-form'
 import createHistory from 'history/createBrowserHistory'
@@ -15,7 +14,6 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const middlewares = [thunk, middlewareRouter];
 const reducers = combineReducers({
     ui: uiReducer,
-    contacts: contactReducer,
     router: routerReducer,
     form: formReducer,
 })

@@ -4,16 +4,17 @@ import { withStyles } from "material-ui/styles";
 import { withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { compose } from "redux";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Navbar from "./Navbar";
 import App from "./pages/App";
-import About from "./pages/About";
-import ContactPage from "./pages/Contact";
 import classNames from "classnames";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+
 const Fade = props => (
   <CSSTransition {...props} timeout={300} exit={false} classNames="fade" />
 );
+
 const drawerWidth = 240;
+
 const styles = theme => ({
   content: {
     flex: "flex: 1 1 100%",
@@ -47,8 +48,6 @@ const MyRoot = props => {
           <Fade key={location.pathname}>
             <Switch localtion={location}>
               <Route exact path="/" component={App} />
-              <Route path="/about/:name" component={About} />
-              <Route path="/contact" component={ContactPage} />
             </Switch>
           </Fade>
         </TransitionGroup>
