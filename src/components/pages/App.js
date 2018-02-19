@@ -1,13 +1,13 @@
 import React from "react";
 import { withStyles } from "material-ui/styles";
-import MovieCard from "../shared/MovieCard";
+import MovieFilterList from "../../containers/MovieFilterList";
 
 const styles = theme => ({
   root: {
     flexGrow: 1,
     marginTop: 30,
-    backgroundColor: "#fff"
-  },
+    backgroundColor: "#fafafa"
+  }
 });
 
 class App extends React.Component {
@@ -15,7 +15,7 @@ class App extends React.Component {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
-        <MovieCard></MovieCard>
+        <MovieFilterList />
       </div>
     );
   }

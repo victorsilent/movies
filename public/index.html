@@ -13,24 +13,28 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
     <style>
-    .fade-enter {
-  opacity: 0.01;
-}
+      body{
+        background-color: #fafafa
+      }
+      .fade-enter {
+        opacity: 0.01;
+      }
 
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 1000ms ease-in;
-}
+      .fade-enter.fade-enter-active {
+        opacity: 1;
+        transition: opacity 1000ms ease-in;
+      }
 
-.fade-exit {
-  opacity: 1;
-}
+      .fade-exit {
+        opacity: 1;
+      }
 
-.fade-exit.fade-exit-active {
-  opacity: 0.01;
-  transition: opacity 800ms ease-in;
-}
-</style>
+      .fade-exit.fade-exit-active {
+        opacity: 0.01;
+        transition: opacity 800ms ease-in;
+      }
+
+    </style>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.

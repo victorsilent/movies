@@ -87,11 +87,11 @@ class Navbar extends React.Component {
               <MenuIcon />
             </IconButton>
             <Typography type="title" color="inherit" className={classes.flex}>
-              Dashboard Example
+              Movies List
             </Typography>
           </Toolbar>
         </AppBar>
-        <Hidden smUp>
+        <Hidden mdUp>
           <Drawer
             classes={{ paper: classes.drawerStyle }}
             type="temporary"
@@ -102,7 +102,7 @@ class Navbar extends React.Component {
           </Drawer>
         </Hidden>
 
-        <Hidden smDown>
+        <Hidden mdDown>
           <Drawer
             classes={{ paper: classes.drawerStyle }}
             type="persistent"

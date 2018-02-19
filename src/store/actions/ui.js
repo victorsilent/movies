@@ -1,5 +1,5 @@
 export const toggleDrawer = () => {
-    return {
-        type: 'TOGGLE_DRAWER',
-    }
-}
+  return {
+    type: "TOGGLE_DRAWER"
+  };
+};
