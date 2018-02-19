@@ -3,21 +3,10 @@ import { Route, Switch } from "react-router";
 import { withStyles } from "material-ui/styles";
 import { connect } from "react-redux";
 import { compose } from "redux";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Navbar from "./Navbar";
 import App from "./pages/App";
 import About from "./pages/About";
 import classNames from "classnames";
-
-const Fade = props => (
-  <CSSTransition
-    {...props}
-    timeout={300}
-    appear={true}
-    exit={false}
-    classNames="fade"
-  />
-);
 
 const drawerWidth = 240;
 
@@ -42,7 +31,6 @@ const styles = theme => ({
     }
   }
 });
-
 const MyRoot = props => {
   const { classes, drawerIsOpen, location } = props;
   return (
@@ -53,14 +41,10 @@ const MyRoot = props => {
           [classes.contentShift]: drawerIsOpen
         })}
       >
-        <TransitionGroup className="todo-list">
-          <Fade key={location.pathname}>
-            <Switch localtion={location}>
-              <Route exact path="/" component={App} />
-              <Route exact path="/about" component={About} />
-            </Switch>
-          </Fade>
-        </TransitionGroup>
+        <Switch localtion={location}>
+          <Route exact path="/" component={App} />
+          <Route exact path="/about" component={About} />
+        </Switch>
       </div>
     </div>
   );

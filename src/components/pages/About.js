@@ -1,11 +1,21 @@
 import React from "react";
 import Typography from "material-ui/Typography";
 import Grid from "material-ui/Grid";
+import { withStyles } from "material-ui/styles";
 
-const About = () => {
+const styles = theme => ({
+  grid: {
+    [theme.breakpoints.down("sm")]: {
+      display: "block"
+    }
+  }
+});
+
+const About = props => {
+  const { classes } = props;
   return (
     <div>
-      <Grid container justify="center">
+      <Grid container justify="center" className={classes.grid}>
         <Grid item sm={8}>
           <Typography paragraph type="title">
             Sobre as decisões e ferramentas do projeto
@@ -13,14 +23,8 @@ const About = () => {
           <Typography paragraph type="subheading">
             A stack utilizada foi: ReactJS v16, redux (controle de estado da
             aplicação) e{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="http://material-ui-next.com/"
-            >
-              material-ui-next
-            </a>, as demais libs são apenas para complementar essas três
-            principais.
+            <a href="http://material-ui-next.com/">material-ui-next</a>, as
+            demais libs são apenas para complementar essas três principais.
           </Typography>
           <Typography paragraph type="subheading">
             Sobre o design, o projeto consistia um uma listagem de dados de uma
@@ -46,4 +50,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default withStyles(styles)(About);

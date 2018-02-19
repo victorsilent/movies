@@ -2,7 +2,6 @@
   "name": "boilerplate-reactjs",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://victorsilent.github.io/movies",
   "dependencies": {
     "animate.css": "^3.6.1",
     "autoprefixer": "7.1.6",
